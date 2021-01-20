@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validador de contraseñas</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="all" href="style.css" />  
+    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Verificador de contraseña</h1>
+        <form>
+            <ul>
+                <li>
+                    <label for="username">Usuario:</label>
+                    <span><input id="username" name="username" type="text" /></span>
+                </li>
+                <li>
+                    <label for="pswd">Contraseña:</label>
+                    <span><input id="pswd" type="password" name="pswd" /></span>
+                </li>
+                <li>
+                    <button type="submit">Continuar</button>
+                </li>
+            </ul>
+        </form>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br>
+        <div id="pswd_info">
+            <h4>Debe contener por lo menos:</h4>
+            <ul>
+                <li id="letter" class="invalid"><strong>Una letra minúscula.</strong></li>
+                <li id="capital" class="invalid"><strong>Una letra mayúscula.</strong></li>
+                <li id="number" class="invalid"><strong>Cuatro números.</strong></li>
+                <li id="length" class="invalid"><strong>16 caracteres.</strong></li>
+                <li id="characters" class="invalid"><strong>Caracteres especiales.</strong></li>
+                <li id="coincidence" class="valid"><strong>Los numeros no deben coincidir.</strong></li>
+                <li id="coincidencemin" class="valid"><strong>Las minúsculas no deben coincidir.</strong></li>
+                <li id="coincidencemay" class="valid"><strong>Las mayúsculas no deben coincidir.</strong></li>
+                <li id="coincidencechar" class="valid"><strong>Los signos no deben coincidir.</strong></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
